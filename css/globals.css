@@ -1,0 +1,147 @@
+*, *::after, *::before{ /* все значение обнолили*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*сохраняет изначальное значение, даже при изменение внешних и внутренних отсутпов */
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    font-family: inherit; /*общий родительский стиль для присваивание, */
+}
+
+input,  /* font-family: inherit;  должен указываться вседа, так как он не ссыллается на главный */
+label, 
+span, 
+textarea, /* font-family: inherit должен указываться вседа, так как он не ссыллается на главный */
+a, 
+button{   /* font-family: inherit; должен указываться вседа, так как он не ссыллается на главный */
+    display: inline-block; /* это линения и блочная, в одну линию*/
+    font-family: inherit;
+} 
+
+a, a:hover{
+    text-decoration: none; /*удаление линии при наведение мышки */
+    color: #000;
+}
+
+img{
+    display: block; /*удаление всех отступов для картинок*/
+    width: 100%; 
+    height: auto;
+}
+
+/*body*/
+
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;  
+}
+
+.container{
+    width: 900px;
+}
+
+.header{
+    background-color: #f0f8ff;
+    color: #000;
+    padding: 40px;
+}
+
+.title-1{
+    font-size: 42px;
+    line-height: 1;
+    margin-bottom: 24px;
+}
+
+.title-4{
+    font-size: 20px;
+    /* margin-bottom: 10px; */
+    margin-top: 10px;
+}
+
+.subtitle, text{
+    font-size: 16px;
+}
+
+.text{
+    text-align: justify;
+}
+
+.menu{
+    background-color: #496883;
+    color: #fff;
+    margin: 20px 0;
+    padding: 20px 40px;
+}
+
+.menu .menu-link{
+    color: inherit;
+}
+
+/* .menu > .menu-link + .menu-link{
+    margin-left: 30px;
+} */
+
+.menu > * + *{
+    margin-left: 30px;
+}
+
+.menu-link:hover{
+    color: #e3a215;
+}
+
+
+.title-2{
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+.title-3{
+    font-size: 26px;
+    margin-bottom: 24px;
+}
+
+.main{
+    background-color: #dcebf0;
+    margin: 20px 0;
+    padding: 40px;
+}
+
+.main > *+*{
+    margin-top: 24px;
+}
+
+.link{
+    color: blue;
+}
+
+.link:hover{
+    text-decoration: underline;
+    color: pink;
+}
+
+.quate{
+    font-size: 18px;
+    margin: 40px 0;
+    padding: 15px 40px;
+    border-left: 3px solid #f24137;
+    font-style: italic;
+}
+
+.footer{
+    background-color: #1d3f5e;
+    color: #fff;
+    margin: 20px 0;
+    padding: 20px 40px;
+}
+
+.article{
+    margin-bottom: 50px;
+}
+
+.list{
+    padding-left: 20px;
+}
+
+.list > *+*{
+    margin-top: 10px;
+}
